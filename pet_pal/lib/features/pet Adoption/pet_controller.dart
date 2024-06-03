@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:pet_pal/features/pet%20Adoption/pet_service.dart';
+
 import 'package:pet_pal/image_strings.dart';
 import 'package:pet_pal/model/pet.dart';
 
