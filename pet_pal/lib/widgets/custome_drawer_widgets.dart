@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:pet_pal/features/pet%20%20donation/pet_donation_screen.dart';
+import 'package:pet_pal/features/pet%20Adoption/chat_screen.dart';
 import 'package:pet_pal/features/pet%20Adoption/pet_screen.dart';
 import 'package:pet_pal/features/pet%20care%20module/pet_care_screen.dart';
 import 'package:pet_pal/utils/constant/colors.dart';
@@ -164,6 +165,24 @@ class _DrawerWidgetsState extends State<DrawerWidgets> {
                 //   Icons.arrow_forward,
                 //   color: AppConstant.appTextColor,
                 // ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: ListTile(
+                onTap: () {
+                 Get.to(() => const ChatScreen());
+                },
+                titleAlignment: ListTileTitleAlignment.center,
+                title: const Text(
+                  "Messeges",
+                  style: TextStyle(color: AppColor.textwhite),
+                ),
+                leading: const Icon(
+                  Icons.message,
+                  color: AppColor.textwhite,
+                ),
+             
               ),
             ),
             Padding(
