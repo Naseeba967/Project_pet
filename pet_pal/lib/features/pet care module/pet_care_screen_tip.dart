@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pet_pal/features/pet%20care%20module/consultant_screen.dart';
+
 import 'package:pet_pal/features/pet%20care%20module/pet_detail_screen.dart';
 import 'package:pet_pal/model/pet_care_category.dart';
 

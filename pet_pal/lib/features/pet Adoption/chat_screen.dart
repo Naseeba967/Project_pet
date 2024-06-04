@@ -3,15 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:pet_pal/model/pet.dart';
 
 class ChatScreen extends StatelessWidget {
-  final Pet pet;
-
-  const ChatScreen({Key? key, required this.pet}) : super(key: key);
+ 
+  const ChatScreen({Key? key,}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chat with ${pet.name} Shelter/Owner'),
+        title: Text('Chat with Shelter/Owner'),
       ),
       body: const Center(
         child: Text(

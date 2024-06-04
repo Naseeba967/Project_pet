@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:pet_pal/utils/constant/colors.dart';
-import 'package:pet_pal/utils/helpers/helpers_function.dart';
+
 import 'package:pet_pal/widgets/appbar/appbar.dart';
 
 import '../../image_strings.dart';
