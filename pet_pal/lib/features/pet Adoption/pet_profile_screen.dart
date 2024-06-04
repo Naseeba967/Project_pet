@@ -5,7 +5,7 @@ import 'package:pet_pal/model/pet.dart';
 class PetDetailScreen extends StatelessWidget {
   final Pet pet;
 
-  PetDetailScreen({required this.pet});
+  const PetDetailScreen({super.key, required this.pet});
 
   @override
   Widget build(BuildContext context) {
@@ -19,21 +19,21 @@ class PetDetailScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.network(pet.photos.toString()),
-            SizedBox(height: 10),
-            Text('Breed: ${pet.breed}', style: TextStyle(fontSize: 18)),
-            Text('Size: ${pet.size}', style: TextStyle(fontSize: 18)),
-            Text('Age: ${pet.age} years', style: TextStyle(fontSize: 18)),
-            Text('Temperament: ${pet.temperament}', style: TextStyle(fontSize: 18)),
-            Text('Location: ${pet.contactInfo}', style: TextStyle(fontSize: 18)),
-            SizedBox(height: 10),
-            Text('Description:', style: TextStyle(fontSize: 18)),
+            const SizedBox(height: 10),
+            Text('Breed: ${pet.breed}', style: const TextStyle(fontSize: 18)),
+            Text('Size: ${pet.size}', style: const TextStyle(fontSize: 18)),
+            Text('Age: ${pet.age} years', style: const TextStyle(fontSize: 18)),
+            Text('Temperament: ${pet.temperament}', style: const TextStyle(fontSize: 18)),
+            Text('Location: ${pet.contactInfo}', style: const TextStyle(fontSize: 18)),
+            const SizedBox(height: 10),
+            const Text('Description:', style: TextStyle(fontSize: 18)),
             Text(pet.description),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
                 // Handle contact shelter or pet owner
               },
-              child: Text('Contact Shelter/Owner'),
+              child: const Text('Contact Shelter/Owner'),
             ),
           ],
         ),

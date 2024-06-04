@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 class PetConsultantScreen extends StatefulWidget {
+  const PetConsultantScreen({super.key});
+
   @override
   _PetConsultantScreenState createState() => _PetConsultantScreenState();
 }

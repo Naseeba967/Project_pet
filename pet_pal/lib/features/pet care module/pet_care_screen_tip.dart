@@ -5,6 +5,8 @@ import 'package:pet_pal/features/pet%20care%20module/pet_detail_screen.dart';
 import 'package:pet_pal/model/pet_care_category.dart';
 
 class PetCareTipScreen extends StatefulWidget {
+  const PetCareTipScreen({super.key});
+
   @override
   _PetCareTipScreenState createState() => _PetCareTipScreenState();
 }

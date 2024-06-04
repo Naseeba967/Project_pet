@@ -5,18 +5,20 @@ import 'package:pet_pal/features/pet%20Adoption/pet_profile_screen.dart';
 import 'package:pet_pal/model/pet.dart';
 
 class PetSearchScreen extends StatelessWidget {
+
+
+   PetSearchScreen({super.key});
   final PetSearchController controller = Get.put(PetSearchController());
 
   final List<String> breeds = ['All', 'Labrador', 'Poodle', 'Bulldog'];
   final List<String> sizes = ['All', 'Small', 'Medium', 'Large'];
   final List<String> ages = ['All', 'Puppy', 'Adult', 'Senior'];
   final List<String> temperaments = ['All', 'Calm', 'Energetic', 'Playful'];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pet Search'),
+        title: const Text('Pet Search'),
       ),
       body: Column(
         children: [
@@ -35,7 +37,7 @@ class PetSearchScreen extends StatelessWidget {
                       child: Text(breed),
                     );
                   }).toList(),
-                  decoration: InputDecoration(labelText: 'Breed'),
+                  decoration: const InputDecoration(labelText: 'Breed'),
                 ),
                 DropdownButtonFormField<String>(
                   value: controller.size.value.isEmpty
@@ -48,7 +50,7 @@ class PetSearchScreen extends StatelessWidget {
                       child: Text(size),
                     );
                   }).toList(),
-                  decoration: InputDecoration(labelText: 'Size'),
+                  decoration: const InputDecoration(labelText: 'Size'),
                 ),
                 DropdownButtonFormField<String>(
                   value: controller.age.value.isEmpty
@@ -61,7 +63,7 @@ class PetSearchScreen extends StatelessWidget {
                       child: Text(age),
                     );
                   }).toList(),
-                  decoration: InputDecoration(labelText: 'Age'),
+                  decoration: const InputDecoration(labelText: 'Age'),
                 ),
                 DropdownButtonFormField<String>(
                   value: controller.temperament.value.isEmpty
@@ -75,16 +77,16 @@ class PetSearchScreen extends StatelessWidget {
                       child: Text(temperament),
                     );
                   }).toList(),
-                  decoration: InputDecoration(labelText: 'Temperament'),
+                  decoration: const InputDecoration(labelText: 'Temperament'),
                 ),
                 TextField(
                   onChanged: (value) => controller.location.value = value,
-                  decoration: InputDecoration(labelText: 'Location'),
+                  decoration: const InputDecoration(labelText: 'Location'),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ElevatedButton(
                   onPressed: () => controller.fetchPets(),
-                  child: Text('Search'),
+                  child: const Text('Search'),
                 ),
               ],
             ),
@@ -92,7 +94,7 @@ class PetSearchScreen extends StatelessWidget {
           Expanded(
             child: Obx(() {
               if (controller.searchResults.isEmpty) {
-                return Center(child: Text('No pets found'));
+                return const Center(child: Text('No pets found'));
               }
               return ListView.builder(
                 itemCount: controller.allPets.length,

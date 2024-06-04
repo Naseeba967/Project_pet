@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
               AppPrimaryHeaderContainer(
                 child: Column(
                   children: [
-                    HomeAppbar(),
+                    const HomeAppbar(),
                     const SizedBox(height: 16), // Consistent spacing
                     SearchContainer(
                       text: 'Find your perfect pet match!',

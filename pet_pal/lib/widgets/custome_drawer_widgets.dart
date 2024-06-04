@@ -61,17 +61,17 @@ class _DrawerWidgetsState extends State<DrawerWidgets> {
               color: Colors.grey,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: ListTile(
                 onTap: () {
-                  Get.to(() => PetSearchScreen());
+                  Get.to(() =>  PetSearchScreen());
                 },
                 titleAlignment: ListTileTitleAlignment.center,
-                title: Text(
+                title: const Text(
                   "Adoption",
                   style: TextStyle(color: AppColor.textwhite),
                 ),
-                leading: Icon(
+                leading: const Icon(
                   FontAwesomeIcons.paw,
                   color: AppColor.textwhite,
                 ),
@@ -85,7 +85,7 @@ class _DrawerWidgetsState extends State<DrawerWidgets> {
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: ListTile(
                 onTap: () {
-                  Get.to(() => PetDonationScreen());
+                  Get.to(() => const PetDonationScreen());
                 },
                 titleAlignment: ListTileTitleAlignment.center,
                 title: const Text(
@@ -107,7 +107,7 @@ class _DrawerWidgetsState extends State<DrawerWidgets> {
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: ListTile(
                 onTap: () {
-                  Get.to(() => PetCareScreen());
+                  Get.to(() => const PetCareScreen());
                 },
                 titleAlignment: ListTileTitleAlignment.center,
                 title: const Text(

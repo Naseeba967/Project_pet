@@ -26,12 +26,12 @@ class PetCareScreen extends StatelessWidget {
           ),
           action: [
             IconButton(onPressed: (){
-               Get.to(()=>PetCareTipScreen());  
+               Get.to(()=>const PetCareTipScreen());  
 
             }, icon: const Icon(Icons.light, color :Colors.yellow)),
                 IconButton(onPressed: (){
                
-        Get.to(()=>PetConsultantScreen());
+        Get.to(()=>const PetConsultantScreen());
                 }, icon: const Icon(Icons.medical_services))
           ],
         ),

@@ -21,17 +21,17 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       routes: {
-        '/splash-screen': (context) => SplashScreen(),
+        '/splash-screen': (context) => const SplashScreen(),
         '/sign-Up': (context) => Login(),
-        '/home': (context) => HomeScreen(),
+        '/home': (context) => const HomeScreen(),
         // '/pet-search': (context) => PetSearchScreen(),
-        '/pet-care': (context) => PetCareScreen(),
+        '/pet-care': (context) => const PetCareScreen(),
       },
       themeMode: ThemeMode.system,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }
