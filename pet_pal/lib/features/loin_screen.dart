@@ -29,7 +29,10 @@ class Login extends StatelessWidget {
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 30,
-                      fontFamily: "poppins"),
+
+
+
+                      ),
                 ),
               ),
 
@@ -38,7 +41,8 @@ class Login extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    fontFamily: "poppins"),
+                    // fontFamily: "poppins"
+                    ),
               ),
               const SizedBox(
                 height: 10,

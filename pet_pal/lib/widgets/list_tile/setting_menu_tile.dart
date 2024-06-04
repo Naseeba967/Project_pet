@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:pet_pal/utils/constant/colors.dart';
 
@@ -8,7 +7,8 @@ class SettingMenuTile extends StatelessWidget {
       required this.icon,
       required this.title,
       required this.subTitle,
-       this.trailing, required this.onTap});
+      this.trailing,
+      required this.onTap});
   final IconData icon;
   final String title, subTitle;
   final Widget? trailing;
@@ -19,7 +19,7 @@ class SettingMenuTile extends StatelessWidget {
       leading: Icon(
         icon,
         size: 28,
-        color: AppColor.primaryColor,
+        color: AppColor.mainColor,
       ),
       title: Text(
         title,

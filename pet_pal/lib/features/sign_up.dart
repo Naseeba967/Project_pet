@@ -24,7 +24,8 @@ class Signup extends StatelessWidget {
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 30,
-                      fontFamily: "poppins"),
+                   
+                      ),
                 ),
               ),
               Center(
@@ -34,7 +35,8 @@ class Signup extends StatelessWidget {
                       color: Colors.black.withOpacity(.7),
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
-                      fontFamily: "poppins"),
+                     
+                      ),
                 ),
               ),
               const SizedBox(
@@ -136,6 +138,7 @@ class Signup extends StatelessWidget {
                     width: 10,
                   ),
                   InkWell(
+                  
                     onTap: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Login()));

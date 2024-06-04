@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pet_pal/features/home.dart';
+import 'package:pet_pal/features/loin_screen.dart';
 
 import 'package:pet_pal/features/pet%20care%20module/pet_care_screen.dart';
 import 'package:pet_pal/features/splash_screen.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       routes: {
         '/splash-screen': (context) => SplashScreen(),
+        '/sign-Up': (context) => Login(),
         '/home': (context) => HomeScreen(),
         // '/pet-search': (context) => PetSearchScreen(),
         '/pet-care': (context) => PetCareScreen(),

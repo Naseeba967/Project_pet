@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:pet_pal/features/pet%20%20donation/pet_donation_screen.dart';
+import 'package:pet_pal/features/pet%20Adoption/pet_screen.dart';
 import 'package:pet_pal/features/pet%20care%20module/pet_care_screen.dart';
 import 'package:pet_pal/utils/constant/colors.dart';
+
+import '../features/personalization/setting/setting_screen.dart';
 
 class DrawerWidgets extends StatefulWidget {
   const DrawerWidgets({super.key});
@@ -55,16 +59,19 @@ class _DrawerWidgetsState extends State<DrawerWidgets> {
               thickness: 1.5,
               color: Colors.grey,
             ),
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: ListTile(
+                onTap: () {
+                  Get.to(() => PetSearchScreen());
+                },
                 titleAlignment: ListTileTitleAlignment.center,
                 title: Text(
                   "Adoption",
                   style: TextStyle(color: AppColor.textwhite),
                 ),
                 leading: Icon(
-                  Icons.donut_large,
+                  FontAwesomeIcons.paw,
                   color: AppColor.textwhite,
                 ),
                 // trailing: Icon(
@@ -141,6 +148,10 @@ class _DrawerWidgetsState extends State<DrawerWidgets> {
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: ListTile(
                 titleAlignment: ListTileTitleAlignment.center,
+                onTap: () {
+                  Get.to(() => const SettingScreen());
+                },
+
                 title: const Text(
                   "Setting",
                   style: TextStyle(color: AppColor.textwhite),
@@ -153,10 +164,6 @@ class _DrawerWidgetsState extends State<DrawerWidgets> {
                 //   Icons.arrow_forward,
                 //   color: AppConstant.appTextColor,
                 // ),
-                onTap: () {
-                  Get.back();
-                  // Get.to(() => AllOrdersScreen());
-                },
               ),
             ),
             Padding(
